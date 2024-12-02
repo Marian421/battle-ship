@@ -96,7 +96,9 @@ const ScreenController = (() => {
                         setTimeout((() => {
                             cell.style.backgroundColor = "#81B29A";
                             status.textContent = "Succesful Attack";
-                            handleTimeoutAttack();
+                            //handleTimeoutAttack();
+                            coverBoard.changeBoard();
+                            coverBoard.changeStyle();
                         }), timeBetweenAttacks);
                         if (result[1]){
                             setTimeout((() => {
